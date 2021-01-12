@@ -1,0 +1,15 @@
+# Minimum Django and REST framework version
+Django>=3.0
+djangorestframework>=3.0
+
+# Test requirements
+pytest-django==4.1.0
+pytest==6.2.1
+pytest-cov==2.10.1
+flake8==3.8.4
+
+# wheel for PyPI installs
+wheel==0.36.2
+
+# MkDocs for documentation previews/deploys
+mkdocs==1.1.2

@@ -1,0 +1,4 @@
+site_name: drf_dog
+site_description: Copy-paste utilities for Django REST Framework
+repo_url: https://github.com/coaxsoft/drf_dog
+site_dir: html
