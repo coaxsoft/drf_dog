@@ -2,8 +2,7 @@ from rest_framework import serializers
 
 
 class SerializerFunctionField(serializers.Field):
-    """
-    A read-only field that get its representation from calling a function passed to
+    """A read-only field that get its representation from calling a function passed to
     initialization attributes. The function should take two arguments. The first one
     is the object being serializer, the second one is serializer context.
 
@@ -13,7 +12,7 @@ class SerializerFunctionField(serializers.Field):
     For example:
 
         def func(obj, context=None):
-                return ...  # Calculate some data to return.
+                return ...  # Return the data
 
         class ExampleSerializer(self):
             extra_info = SerializerFunctionField(function=func)
