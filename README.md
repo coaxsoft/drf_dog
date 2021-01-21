@@ -4,7 +4,12 @@
 
 Copy-paste utilities for Django REST Framework.
 
-Documentation available at [https://coaxsoft.github.io/drf_dog](https://coaxsoft.github.io/drf_dog)
+---
+
+**Documentation** [https://coaxsoft.github.io/drf_dog](https://coaxsoft.github.io/drf_dog)
+
+*Source code*** [https://github.com/coaxsoft/drf_dog](https://github.com/coaxsoft/drf_dog)
+---
 
 ## Requirements
 
@@ -21,28 +26,6 @@ Install using ``pip``
 $ pip install drf_dog
 ```
 
-## Example
+## License
 
-TODO: Write example.
-
-## Run tests
-
-Install testing requirements.
-
-```bash
-$ pip install -r requirements.txt
-```
-
-Run with runtests.
-
-```bash
-    $ ./runtests.py
-```
-
-You can also use the excellent `tox`_ testing tool to run the tests
-against all supported versions of Python and Django. Install tox
-globally, and then simply run:
-
-```bash
-$ tox
-```
+This project is licensed under the terms of the ISC License
