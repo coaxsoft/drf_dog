@@ -4,6 +4,8 @@
 
 Copy-paste utilities for Django REST Framework.
 
+Documentation available at [https://coaxsoft.github.io/drf_dog](https://coaxsoft.github.io/drf_dog)
+
 ## Requirements
 
 -  Python 3.7+
@@ -23,7 +25,7 @@ $ pip install drf_dog
 
 TODO: Write example.
 
-## Testing
+## Run tests
 
 Install testing requirements.
 
