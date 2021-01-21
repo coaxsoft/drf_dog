@@ -13,42 +13,44 @@ functionality in several serializers.
 Let's take a look to example when you need to return whether
 authenticated user follows the other user.
 
-With `SerializerMethodField` it will look like
+Here is the comparison of code using method field and function field approaches
 
-```python
-from rest_framework import serializers
+=== "SerializerFunctionField"
 
+    ```python
+    from rest_framework import serializers
+    from drf_dog.serializers import SerializerFunctionField
+    
+    
+    def get_is_following(obj, context):
+        return obj.followers.filter(pk=context['request'].user.pk).exists()
+    
+    class UserSerializer(serializers.ModelSerializer):
+        is_following = SerializerFunctionField(function=get_is_following)
+    
+        class Meta:
+            model = User
+            fields = ('id', 'username', 'is_following')
+    ```
 
-class UserSerializer(serializers.ModelSerializer):
-    is_following = serializers.SerializerMethodField()
+=== "SerializerMethodField"
 
-    class Meta:
-        model = User
-        fields = ('id', 'username', 'is_following')
-
-    def get_is_following(self, obj):
-        return obj.followers.filter(
-            pk=self.context['request'].user.pk
-        ).exists()
-```
-
-Using `SerializerFunctionField` it will look like
-
-```python
-from rest_framework import serializers
-from drf_dog.serializers import SerializerFunctionField
-
-
-def get_is_following(obj, context):
-    return obj.followers.filter(pk=context['request'].user.pk).exists()
-
-class UserSerializer(serializers.ModelSerializer):
-    is_following = SerializerFunctionField(function=get_is_following)
-
-    class Meta:
-        model = User
-        fields = ('id', 'username', 'is_following')
-```
+    ```python
+    from rest_framework import serializers
+    
+    
+    class UserSerializer(serializers.ModelSerializer):
+        is_following = serializers.SerializerMethodField()
+    
+        class Meta:
+            model = User
+            fields = ('id', 'username', 'is_following')
+    
+        def get_is_following(self, obj):
+            return obj.followers.filter(
+                pk=self.context['request'].user.pk
+            ).exists()
+    ```
 
 This is very useful when you have several serializers relying on `get_is_following`.
 
