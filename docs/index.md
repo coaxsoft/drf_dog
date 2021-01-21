@@ -1,8 +1,8 @@
-# DRF Dog :dog:
+# DRF Dog
 
-![Python package](https://github.com/coaxsoft/drf_dog/workflows/Python%20package/badge.svg)
+![Tests](https://github.com/coaxsoft/drf_dog/workflows/Tests/badge.svg)
 
-Copy-paste utilities for Django REST Framework.
+Copy-paste utilities for Django REST Framework :dog:
 
 ---
 
@@ -21,7 +21,7 @@ can be easily installed from `PyPi` or just copy-pasted to your own code.
 
 ## Requirements
 
--  Python 3.7+
+-  Python 3.6+
 -  Django 3.0+
 -  Django REST Framework 3.11+
 

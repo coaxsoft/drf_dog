@@ -10,7 +10,7 @@ name = 'drf_dog'
 package = 'drf_dog'
 description = 'Copy-paste utilities for Django REST Framework'
 url = 'https://github.com/coaxsoft/drf_dog'
-author = 'Mike Kravets'
+author = 'Mikhail Kravets'
 author_email = 'mike.k@coaxsoft.com'
 license = 'ISC'
 
@@ -81,6 +81,8 @@ setup(
     packages=get_packages(package),
     package_data=get_package_data(package),
     install_requires=[],
+    keywords='django rest_framework drf utils',
+    python_requires='>=3.6',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',
