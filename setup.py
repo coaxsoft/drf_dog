@@ -12,7 +12,7 @@ description = 'Copy-paste utilities for Django REST Framework'
 url = 'https://github.com/coaxsoft/drf_dog'
 author = 'Mike Kravets'
 author_email = 'mike.k@coaxsoft.com'
-license = 'BSD'
+license = 'ISC'
 
 
 def read(f):
@@ -82,22 +82,25 @@ setup(
     package_data=get_package_data(package),
     install_requires=[],
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Framework :: Django :: 3.0',
         'Framework :: Django :: 3.1',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: ISC License',
         'Operating System :: OS Independent',
         'Natural Language :: English',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3 :: Only',
         'Topic :: Internet :: WWW/HTTP',
-    ]
+    ],
+    project_urls={
+        'Documentation': 'https://coaxsoft.github.io/drf_dog/',
+        'Source': 'https://github.com/coaxsoft/drf_dog',
+    },
 )
