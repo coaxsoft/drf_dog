@@ -17,7 +17,7 @@ jobs:
       matrix:
         python-version: [3.7, 3.8, 3.9]
         django-version: [3.0, 3.1]
-        drf-version: [3.12, 3.11, 3.10]
+        drf-version: [3.12, 3.11]
 
     steps:
     - uses: actions/checkout@v2
@@ -28,9 +28,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m pip install flake8 pytest tox
+        python -m pip install flake8 pytest
         python -m pip install django==${{ matrix.django-version }}
-        python -m pip install django==${{ matrix.drf-version }}
+        python -m pip install djangorestframework==${{ matrix.drf-version }}
 #        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
@@ -40,4 +40,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest --cov
+        pytest
