@@ -1,10 +1,8 @@
 # drf_dog
 
-|build-status-image| |pypi-version|
+![Python package](https://github.com/coaxsoft/drf_dog/workflows/Python%20package/badge.svg)
 
-## Overview
-
-Copy-paste utilities for Django REST Framework
+DRF Dog is copy-paste utilities for Django REST Framework.
 
 ## Requirements
 
@@ -14,11 +12,12 @@ Copy-paste utilities for Django REST Framework
 
 ## Installation
 
-Install using ``pip``\ …
+Install using ``pip``
 
-.. code:: bash
 
-    $ pip install drf_dog
+```bash
+$ pip install drf_dog
+```
 
 ## Example
 
