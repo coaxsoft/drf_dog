@@ -9,6 +9,7 @@ Copy-paste utilities for Django REST Framework.
 **Documentation** [https://coaxsoft.github.io/drf_dog](https://coaxsoft.github.io/drf_dog)
 
 *Source code*** [https://github.com/coaxsoft/drf_dog](https://github.com/coaxsoft/drf_dog)
+
 ---
 
 ## Requirements
