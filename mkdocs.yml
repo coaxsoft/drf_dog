@@ -2,6 +2,9 @@ site_name: DRF dog
 repo_url: https://github.com/coaxsoft/drf_dog
 theme:
   name: material
+  favicon: assets/favicon.png
+  icon:
+    logo: material/axe
 nav:
   - About: about.md
   - Serializers: serializers.md
