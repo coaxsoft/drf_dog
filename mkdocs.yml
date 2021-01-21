@@ -1,4 +1,21 @@
-site_name: drf_dog
-site_description: Copy-paste utilities for Django REST Framework
+site_name: DRF dog
 repo_url: https://github.com/coaxsoft/drf_dog
-site_dir: html
+theme:
+  name: material
+  favicon: assets/favicon.png
+  icon:
+    logo: material/axe
+  palette:
+    primary: blue
+  features:
+    - navigation.instant
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed
+nav:
+  - Serializers: serializers.md
+  - Release Notes: release_notes.md

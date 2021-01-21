@@ -1,14 +1,22 @@
-# drf_dog
+# DRF Dog
 
 ![Python package](https://github.com/coaxsoft/drf_dog/workflows/Python%20package/badge.svg)
 
-DRF Dog is copy-paste utilities for Django REST Framework.
+Copy-paste utilities for Django REST Framework.
+
+---
+
+**Documentation** [https://coaxsoft.github.io/drf_dog](https://coaxsoft.github.io/drf_dog)
+
+**Source code** [https://github.com/coaxsoft/drf_dog](https://github.com/coaxsoft/drf_dog)
+
+---
 
 ## Requirements
 
--  Python 3.6+
+-  Python 3.7+
 -  Django 3.0+
--  Django REST Framework 3.10+
+-  Django REST Framework 3.11+
 
 ## Installation
 
@@ -19,49 +27,6 @@ Install using ``pip``
 $ pip install drf_dog
 ```
 
-## Example
+## License
 
-TODO: Write example.
-
-## Testing
-
-Install testing requirements.
-
-```bash
-$ pip install -r requirements.txt
-```
-
-Run with runtests.
-
-```bash
-    $ ./runtests.py
-```
-
-You can also use the excellent `tox`_ testing tool to run the tests
-against all supported versions of Python and Django. Install tox
-globally, and then simply run:
-
-```bash
-$ tox
-```
-
-## Documentation
-
-To build the documentation, you’ll need to install ``mkdocs``.
-
-```bash
-$ pip install mkdocs
-```
-
-To preview the documentation:
-
-```bash
-$ mkdocs serve
-Running at: http://127.0.0.1:8000/
-```
-
-To build the documentation:
-
-```bash
-$ mkdocs build
-```
+This project is licensed under the terms of the ISC License
