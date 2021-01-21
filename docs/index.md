@@ -1,4 +1,4 @@
-# DRF Dog
+# DRF Dog :dog:
 
 ![Python package](https://github.com/coaxsoft/drf_dog/workflows/Python%20package/badge.svg)
 
@@ -11,6 +11,13 @@ Copy-paste utilities for Django REST Framework.
 **Source code** [https://github.com/coaxsoft/drf_dog](https://github.com/coaxsoft/drf_dog)
 
 ---
+
+Why copy-paste utilities? Often, it is mentally hard to install
+no name packages, especially, to commercial project, but it is easy to copy-paste
+the solution from stack overflow or github. 
+
+For this reason, we try to keep this project the way that it
+can be easily installed from `PyPi` or just copy-pasted to your own code.
 
 ## Requirements
 
