@@ -1,5 +1,6 @@
 # DRF Dog
 
+![PyPi](https://pypip.in/v/drf-dog/badge.png)
 ![Tests](https://github.com/coaxsoft/drf_dog/workflows/Tests/badge.svg)
 
 Copy-paste utilities for Django REST Framework.
